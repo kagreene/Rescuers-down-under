@@ -8,8 +8,85 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+    <!--Header-->
+  <header>
+    <h1>Rescuers Down Under</h1>
+    <p>Find your Fur-Ever Friend</p>
+  </header>    
+
+  <!--Navigation Bar-->
+  <nav>
+    <a href="#">Adoptable Pets</a>
+    <a href="#">Adoption Form</a>
+  </nav>
+
+  <!--Gallary (styled like 02-Advanced CSS 10)-->
+  <div class="pets">
+    <section class="card">
+      <header>Pet 1</header>
+      <img src="place holder for image" alt="pet description"/>
+    </section>
+  
+    <section class="card">
+      <header>Pet 2</header>
+      <img src="place holder for image" alt="pet description"/>
+    </section>
+
+    <section class="card">
+      <header>Pet 3</header>
+      <img src="place holder for image" alt="pet description"/>
+    </section>
+
+    <section class="card">
+      <header>Pet 4</header>
+      <img src="place holder for image" alt="pet description"/>
+    </section>
+  </div>
+
+  <!--Household form (styled like 04-Web API 24)-->
+  <div class="household">
+    <div class="form">
+      <h2>HouseHold Information</h2>
+      <form method="POST">
+
+        <div class="input-group">
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" placeholder="Patty" />
+        </div>
+
+        <div class="input-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name" placeholder="Pet-Owner" />
+        </div>
+
+        <div class="input-group">
+          <label for="current-family">How many humans are in your household?</label>
+          <input type="text" name="current-family" id="current-family" placeholder="2" />
+        </div>
+
+        <div class="input-group">
+          <label for="current-pets">How many pets are in your household?</label>
+          <input type="text" name="current-pets" id="current-pets" placeholder="2" />
+        </div>
+
+        <div class="input-group">
+          <label for="wishlist">What are you looking for in a new pet? (dog, cat, senior, young, etc)</label>
+          <input type="text" name="wishlist" id="wishlist" placeholder="2" />
+        </div>
+
+      </form>
+    </div>
+  </div>
+  
+<!--Footer-->
+  <footer>
+    <h3>
+      Brought to you by the Rescuers Down Under!
+    </h3>
+  </footer>
+
 </body>
 </html>
