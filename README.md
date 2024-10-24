@@ -1,6 +1,6 @@
 # Rescuers-down-under
 
-## Purpose
+## Description
 
 This is a website designed to showcase the adorable pets available for adoption! Through the website, you can find out more inforamtion about your potential new best friend. If you see an animal you like, fill out the Household info form to share more information about you.
 
@@ -23,3 +23,18 @@ THEN I am prompted to confirm my information
 WHEN I choose to continue
 THEN I am shone my information on the screen
 ```
+
+## Technologies
+This website utilizes the CSS framwork Bootstrap. This was integrated into the project through a CDN option. 
+* [Bootstrap](https://getbootstrap.com/)
+
+## Screenshot - Needs Images
+The following images show the web application's appearance and functionality:
+
+![Image of the adoptable Pet Gallery](./Assets/03-javascript-homework-demo.gif)
+
+![Image of the Household Form](./Assets/03-javascript-homework-console-demo.png)
+
+## Deployed Application - Needs Active Link
+
+To view the active site, please click here. 
