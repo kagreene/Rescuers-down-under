@@ -1,3 +1,150 @@
 :root {
-    --background: black
+    --background: black;
+    --primary: rgb(126, 25, 25);
+    --secondary: rgb(28, 28, 138);
+    --3rd: grey;
+    --4th: white;
+}
+
+body {
+  /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: var(--primary);
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  /* 4rem = 40px (4 * 10px) */
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+
+header {
+  width: 96%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+header h1.page-title {
+  padding: 1rem 1.2rem;
+  font-size: 4.5rem;
+}
+
+header p {
+  text-align: center;
+  color: var(--3rd);
+}
+
+header,
+footer {
+  padding: 2rem;
+}
+
+footer h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+main {
+  height: calc(100vh - 6rem);
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  border-top: double 1rem;
+}
+
+a {
+  text-align: right;
+}
+
+/*classes*/
+.pets {
+  flex: 4;
+  background-color: var(--background)
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+/* Added rotation, box-shadow, border-radius */
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  padding: 10px;
+  flex: 0 0 300px;
+  box-shadow: 10px 10px 5px var(--3rd);
+  margin: 20px;
+}
+
+/* Added border-radius to match the card */
+.card header {
+  border-radius: 50px 50px 0px 0px;
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  justify-content: space-around;
+  border-radius: 50px;
+}
+
+.household {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 10px;
+  flex: 0 0 300px;
+  box-shadow: 10px 10px 5px var(--3rd);
+  margin: 20px;
+  background-color: var(--4th);
+}
+
+.input-group {
+  color: var(--3rd);
+}
+
+.info {
+  opacity: 0;
+  tranistion: ocaity 0.3s ease;
+}
+
+.card:hover .info {
+  opacity:0.7;
 }
