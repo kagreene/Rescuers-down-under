@@ -13,46 +13,62 @@
   <header>
     <h1 class="page-title">Rescuers Down Under</h1>
     <p>Find your Fur-Ever Friend</p>
-  
-  </header>    
-
   <!--Navigation Bar-->
   <nav>
-    <a href="pets">Adoptable Pets</a>
-    <a href="household">Adoption Form</a>
+      <ul>
+        <li><a href="pets">Adoptable Pets</a></li>
+        <li><a href="household">Adoption Form</a></li>
+      </ul>
+    
   </nav>
 
+  </header>    
+
+  
   <!--Gallary (styled like 02-Advanced CSS 10)-->
   <div class="pets">
+    <h2>Adoptable Pets</h2>
     <section class="card">
-      <header>Pet 1</header>
-      <img src="./images/Dog 1.jpg" alt="pet description"/>
-      <div class=“info”>Placeholder info for pet. </div>
+      <header>Sammy</header>
+      <img src="./images/Dog 1.jpg" alt="pet description" class="image"/>
+      <div class="info">
+        <p>8 yo male golden retriever</p> 
+        <p>LOVES Playing Fetch</p> 
+      </div>
     </section>
   
     <section class="card">
-      <header>Pet 2</header>
-      <img src="./images/Dog 2.jpg" alt="pet description"/>
-      <div class=“info”>Placeholder info for pet. </div>
+      <header>Candy</header>
+      <img src="./images/Dog 2.jpg" alt="pet description" class="image"/>
+      <div class="info">
+        <p>2 yo golden doodle</p> 
+        <p>LOVES Walks </p>
+      </div>
     </section>
 
     <section class="card">
-      <header>Pet 3</header>
-      <img src="./images/Cat 1.jpeg" alt="pet description"/>
-      <div class=“info”>Placeholder info for pet. </div>
+      <header>Sabrina</header>
+      <img src="./images/Cat 1.jpeg" alt="pet description" class="image"/>
+      <div class="info">
+        <p>5 yo female</p>
+        <p>LOVES Halloween!</p>
+      </div>
     </section>
 
     <section class="card">
-      <header>Pet 4</header>
-      <img src="./images/Cat 2.jpg" alt="pet description"/>
-      <div class=“info”>Placeholder info for pet. </div>
+      <header>Mufasa</header>
+      <img src="./images/Cat 2.jpg" alt="pet description" class="image"/>
+      <div class="info">
+        <p>11 yo short haired ginger</p> 
+        <p>LOVES Lasagna </p>
+      </div>
     </section>
   </div>
 
   <!--Household form (styled like 04-Web API 24)-->
   <div class="household">
     <div class="form">
-      <h2>HouseHold Information</h2>
+      <h2>House Hold Information</h2>
       <form method="POST">
 
         <div class="mb-3">
@@ -77,7 +93,7 @@
 
         <div class="mb-3">
           <label for="wishlist" class="form-label">What are you looking for in a new pet? (dog, cat, senior, young, etc) </label>
-          <input type="text" class="form-content" name="wishlist" id="wishlist" placeholder="2" />
+          <textarea type="text" class="form-content" name="wishlist" id="wishlist" placeholder="2 senior cats"></textarea>
         </div>
 
         <button type="button" class = "btn btn-primary" id="submit" data-bs-toggle="modal" data-bs-target="#thanksModal">Submit</button>

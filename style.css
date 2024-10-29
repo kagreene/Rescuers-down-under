@@ -1,7 +1,7 @@
 :root {
     --background: black;
     --primary: rgb(126, 25, 25);
-    --secondary: rgb(28, 28, 138);
+    --secondary: rgb(44, 44, 160);
     --3rd: grey;
     --4th: white;
 }
@@ -37,6 +37,7 @@ h1 {
 h2 {
   font-size: 3.5rem;
   text-align: center;
+  width: 100%;
 }
 
 h3 {
@@ -75,6 +76,23 @@ footer h3 {
   text-align: center;
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  color: var(--secondary);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+
 main {
   height: calc(100vh - 6rem);
   display: flex;
@@ -90,23 +108,26 @@ a {
 /*classes*/
 .pets {
   flex: 4;
-  background-color: var(--background)
+  background-color: var(--background);
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
+  position: relative;
 }
 
 /* Added rotation, box-shadow, border-radius */
 .card {
   border-style: solid;
   border-width: 1px;
-  border-radius: 50px;
+  border-radius: 30px;
   padding: 10px;
   flex: 0 0 300px;
   box-shadow: 10px 10px 5px var(--3rd);
   margin: 20px;
+  position: relative;
+  display: inline-block;
 }
 
 /* Added border-radius to match the card */
@@ -122,13 +143,33 @@ a {
 .card img {
   width: 100%;
   justify-content: space-around;
-  border-radius: 50px;
+  border-radius: 30px;
+}
+
+.image {
+  width: 300px; /* set width as per your image size*/
+  height: auto;
+}
+
+.info {
+  display: none; /*initially hidden*/
+  position: absolute;
+  bottom: 10px; /*adjust based on where you want the text box */
+  left: 10px;
+  background-color: var(--secondary);
+  color: var(--4th);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.card:hover .info {
+  display: block;
 }
 
 .household {
   border-style: solid;
   border-width: 1px;
-  border-radius: 2px;
+  border-radius: 10px;
   padding: 10px;
   flex: 0 0 300px;
   box-shadow: 10px 10px 5px var(--3rd);
@@ -138,13 +179,4 @@ a {
 
 .input-group {
   color: var(--3rd);
-}
-
-.info {
-  opacity: 0;
-  tranistion: ocaity 0.3s ease;
-}
-
-.card:hover .info {
-  opacity:0.7;
 }
