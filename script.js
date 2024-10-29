@@ -8,36 +8,50 @@ const currentPets = document.getElementById('current-pets');
 const wishList = document.getElementById('wishlist');
 const submitButton = document.getElementById('submit')
 
-function saveHouseholdInfo(){
-    //Save data as an object
-    const houseInfo = {
-        firstName: firstName.value,
-        lastName:  lastName.value,
-        familySize: familySize.value,
-        currentPets: currentPets.value,
-        wishList: wishList.value.trim(),
-    };
-    console.log(houseInfo)
-    localStorage.setItem('houseHoldInfo', JSON.stringify(houseInfo));
+
+function saveHouseholdInfo(formData) {
+  //Save data as a string
+
+  localStorage.setItem('houseHoldInfo', JSON.stringify(formData));
 }
 
-function showLastHouse(){
+function showLastHouse() {
   //convert string back to JS object
-  const lastHouse = JSON.parse(localStorage.getItem('houseHoldInfo'))
-  if (lastHouse !== null) {
-    document.getElementById('saved-firstName').innerHTML = lastHouse.firstName;
-    document.getElementById('saved-lastName').innerHTML = lastHouse.lastName;
-    document.getElementById('saved-familySize').innerHTML = lastHouse.familySize;
-    document.getElementById('saved-currentPets').innerHTML = lastHouse.currentPets;
-    document.getElementById('saved-wishList').innerHTML = lastHouse.wishList; 
+  const lastHouse = localStorage.getItem('houseHoldInfo')
+  if (lastHouse) {
+    const lastHouseObj = JSON.parse(lastHouse)
+    document.getElementById('saved-firstName').innerHTML = lastHouseObj.firstName;
+    document.getElementById('saved-lastName').innerHTML = lastHouseObj.lastName;
+    document.getElementById('saved-familySize').innerHTML = lastHouseObj.familySize;
+    document.getElementById('saved-currentPets').innerHTML = lastHouseObj.currentPets;
+    document.getElementById('saved-wishList').innerHTML = lastHouseObj.wishList;
   }
 }
 
 
 submitButton.addEventListener('click', function (event) {
   event.preventDefault();
-  saveHouseholdInfo();
-  showLastHouse();
+  const houseInfo = {
+    firstName: firstName.value,
+    lastName: lastName.value,
+    familySize: familySize.value,
+    currentPets: currentPets.value,
+    wishList: wishList.value.trim(),
+  };
+  if (houseInfo.firstName && houseInfo.lastName && houseInfo.familySize && houseInfo.currentPets && houseInfo.wishList) {
+    saveHouseholdInfo(houseInfo);
+    showLastHouse();
+    var myModal = new bootstrap.Modal(document.getElementById('thanksModal'));
+    console.log(houseInfo)
+    myModal.show();
+  }
+  else {
+    var errModal = new bootstrap.Modal(document.getElementById('incompleteModal'));
+
+    errModal.show();
+  }
+
+
 })
 
 //Create function to show last saved household when page is laoded
