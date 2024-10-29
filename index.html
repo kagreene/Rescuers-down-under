@@ -96,14 +96,14 @@
           <textarea type="text" class="form-content" name="wishlist" id="wishlist" placeholder="2 senior cats"></textarea>
         </div>
 
-        <button type="button" class = "btn btn-primary" id="submit" data-bs-toggle="modal" data-bs-target="#thanksModal">Submit</button>
+        <button type="button" class = "btn btn-primary" id="submit" data-bs-target="#thanksModal">Submit</button>
         <!--Modal-->
         <div class="modal" tabindex="-1" id="thanksModal">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title">Thanks!</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <p>Thanks for submitting your info!</p>
@@ -114,6 +114,24 @@
             </div>
           </div>
         </div>
+        <!--Incomplete form modal-->
+        <div class="modal" tabindex="-1" id="incompleteModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Incomplete form</h5>
+                <button type="button" class="btn-close" data-bs-target ="thanksModal" data-bs-toggle="modal" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Please complete the form before submitting!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-target="thanksModal" data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </form>
     </div>
     <div class="card">
