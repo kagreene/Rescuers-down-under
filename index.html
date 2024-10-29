@@ -16,18 +16,18 @@
   <!--Navigation Bar-->
   <nav>
       <ul>
-        <li><a href="pets">Adoptable Pets</a></li>
-        <li><a href="household">Adoption Form</a></li>
+        <li><a href="#adopt-pets">Adoptable Pets</a></li>
+        <li><a href="#house-form">Adoption Form</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
-    
   </nav>
 
   </header>    
 
   
   <!--Gallary (styled like 02-Advanced CSS 10)-->
-  <div class="pets">
-    <h2>Adoptable Pets</h2>
+  <section class="pets">
+    <h2 id="adopt-pets">Adoptable Pets</h2>
     <section class="card">
       <header>Sammy</header>
       <img src="./images/Dog 1.jpg" alt="pet description" class="image"/>
@@ -63,12 +63,12 @@
         <p>LOVES Lasagna </p>
       </div>
     </section>
-  </div>
+  </section>
 
   <!--Household form (styled like 04-Web API 24)-->
-  <div class="household">
+  <section class="household">
     <div class="form">
-      <h2>House Hold Information</h2>
+      <h2 id="house-form">House Hold Information</h2>
       <form method="POST">
 
         <div class="mb-3">
@@ -124,8 +124,15 @@
       <p>Number of pets in household: <span id="saved-currentPets"></span></p>
       <p>What are you looking for in a pet?: <span id="saved-wishList"></span></p>
     </div>
-  </div>
+  </section>
   
+  <section>
+    <h2 id="contact">Contact Info</h2>
+      <ul class="contact-info">
+        <li>email</li>
+        <li>phone</li>
+      </ul>
+  </section>
 <!--Footer-->
   <footer>
     <h3>

@@ -54,6 +54,8 @@ header {
   margin: 0 auto;
   padding: 2.5rem;
   text-align: center;
+  background-color: var(--4th);
+  border-radius: 30px;
 }
 
 header h1.page-title {
@@ -179,4 +181,11 @@ a {
 
 .input-group {
   color: var(--3rd);
+}
+
+.contact-info {
+  font-weight: bold;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
 }
