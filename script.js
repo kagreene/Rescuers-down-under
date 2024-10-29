@@ -7,7 +7,7 @@ const familySize = document.getElementById('current-family');
 const currentPets = document.getElementById('current-pets');
 const wishList = document.getElementById('wishlist');
 const submitButton = document.getElementById('submit')
-
+const backButton = document.getElementById('back')
 
 function saveHouseholdInfo(formData) {
   //Save data as a string
