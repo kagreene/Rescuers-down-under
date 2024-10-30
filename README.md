@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a website designed to showcase the adorable pets available for adoption! Through the website, you can find out more inforamtion about your potential new best friend. If you see an animal you like, fill out the Household info form to share more information about you.
+This is a website designed to showcase the adorable pets available for adoption! Through the website, you can find out more information about your potential new best friend. If you see an animal you like, fill out the Household info form to share more information about you.
 
 ## User Story
 

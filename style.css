@@ -189,3 +189,33 @@ a {
   display: flex;
   justify-content: space-evenly;
 }
+
+.history-card {
+  background-color: var(--4th);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 30px;
+  padding: 10px;
+  flex: 0 0 1000px;
+  box-shadow: 10px 10px 5px var(--3rd);
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Added border-radius to match the card */
+.history-card header {
+  border-radius: 50px 50px 0px 0px;
+  padding: 20px;
+}
+
+.history-card p {
+  text-align: center;
+}
+
+.history-card img {
+  width: 100%;
+  justify-content: space-around;
+  border-radius: 30px;
+}
