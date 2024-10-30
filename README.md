@@ -28,13 +28,23 @@ THEN I am shone my information on the screen
 This website utilizes the CSS framwork Bootstrap. This was integrated into the project through a CDN option. 
 * [Bootstrap](https://getbootstrap.com/)
 
-## Screenshot - Needs Images
+## Screenshot
 The following images show the web application's appearance and functionality:
 
-![Image of the adoptable Pet Gallery](./Assets/03-javascript-homework-demo.gif)
+![Image of Header and Navigation links](./assets/images/header.jpg)
 
-![Image of the Household Form](./Assets/03-javascript-homework-console-demo.png)
+![Image of adoptable pets](./assets/images/adoptable_pets.jpg)
 
-## Deployed Application - Needs Active Link
+![Image of house hold information fomr](./assets/images/form.jpg)
 
-To view the active site, please click here. 
+![Image of contact links](./assets/images/contact.jpg)
+
+![Image of about us page](./assets/images/about_us.jpg)
+
+![Image of history and location information](./assets/images/history_location.jpg)
+
+![Image of success stories](./assets/images/success_stories.jpg)
+
+## Deployed Application
+
+To view the active site, please click [here](https://kagreene.github.io/Rescuers-down-under/). 
