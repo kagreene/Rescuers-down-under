@@ -31,17 +31,31 @@ This website utilizes the CSS framwork Bootstrap. This was integrated into the p
 ## Screenshot
 The following images show the web application's appearance and functionality:
 
+Header and Navigation
+
 ![Image of Header and Navigation links](./assets/images/header.jpg)
+
+Adoptable Pets Gallary
 
 ![Image of adoptable pets](./assets/images/adoptable_pets.jpg)
 
+House Hol Information Form
+
 ![Image of house hold information fomr](./assets/images/form.jpg)
+
+Contact Links
 
 ![Image of contact links](./assets/images/contact.jpg)
 
+About Us Page
+
 ![Image of about us page](./assets/images/about_us.jpg)
 
-![Image of history and location information](./assets/images/history_location.jpg)
+History and Location Information
+
+![Image of history and location information](./assets/images/hisrtory_location.jpg)
+
+Successful Adoption Stories
 
 ![Image of success stories](./assets/images/success_stories.jpg)
 
