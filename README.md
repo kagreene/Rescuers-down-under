@@ -11,7 +11,7 @@ AS A potential pet adopter
 I WANT A webiste with a picture gallery and form
 SO THAT I can see the available pets and share my information for adoption.
 I WANT a page with information about the adoption agency
-So THAT postential adoptive families can find out about the rescue and the successful adoptions.
+So THAT potential adoptive families can find out about the rescue and the successful adoptions.
 ```
 
 ## Acceptance Criteria
@@ -23,7 +23,7 @@ THEN I am presented with information about the pet
 WHEN I add information to the household information form
 THEN I am prompted to confirm my information
 WHEN I choose to continue
-THEN I am shone my information on the screen
+THEN I am shown my information on the screen
 When I use the navigation tools in the header
 Then I can navigate to an informational page about the rescue
 ```
@@ -45,7 +45,7 @@ Adoptable Pets Gallary
 ![Image of adoptable pets](./assets/images/adoptable_pets.jpg)
 
 
-House Hol Information Form
+House Hold Information Form
 
 ![Image of house hold information fomr](./assets/images/form.jpg)
 
